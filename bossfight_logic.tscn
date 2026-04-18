@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cbtvfqdpv3v01"]
+
+[ext_resource type="Script" uid="uid://c75f46lceuuu5" path="res://bossfight_logic.gd" id="1_3bqfx"]
+
+[node name="BOSSFIGHT_LOGIC" type="Node" unique_id=258542834]
+script = ExtResource("1_3bqfx")

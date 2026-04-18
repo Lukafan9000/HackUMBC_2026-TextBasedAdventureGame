@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://5ksc5hmst7rd"]
+
+[node name="Node2D" type="Node2D" unique_id=980082283]
+
+[node name="restButton" type="Button" parent="." unique_id=54082872]
+offset_left = 94.0
+offset_top = 433.0
+offset_right = 457.0
+offset_bottom = 558.0
+theme_override_font_sizes/font_size = 50
+text = "Rest"
+
+[node name="nextButton" type="Button" parent="." unique_id=1447161043]
+offset_left = 677.0
+offset_top = 129.0
+offset_right = 1040.0
+offset_bottom = 254.0
+theme_override_font_sizes/font_size = 50
+text = "Next"
+
+[node name="itemsButton" type="Button" parent="." unique_id=1137282446]
+offset_left = 666.0
+offset_top = 433.0
+offset_right = 1029.0
+offset_bottom = 558.0
+theme_override_font_sizes/font_size = 50
+text = "Items"
+
+[node name="Button" type="Button" parent="." unique_id=1156453796]
+offset_left = 95.0
+offset_top = 135.0
+offset_right = 458.0
+offset_bottom = 260.0
+theme_override_font_sizes/font_size = 50
+text = "Stats"

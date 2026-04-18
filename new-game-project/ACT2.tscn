@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://cy40lqq75i1f"]
+
+[ext_resource type="Script" uid="uid://d3eyi8rvgjrre" path="res://ACT2Explortation.gd" id="1_61bbl"]
+[ext_resource type="Texture2D" uid="uid://pc1ax6lfnitv" path="res://images/Textbox.png" id="2_ylsrg"]
+[ext_resource type="Texture2D" uid="uid://cmif4v5shwe2v" path="res://images/Brick wall.png" id="3_3yrsg"]
+[ext_resource type="Texture2D" uid="uid://drfykmhtr8lv3" path="res://images/door_texture_by_ancientorange_d4ix003-fullview.jpg" id="4_oxhga"]
+[ext_resource type="Script" uid="uid://dtp0v2r8hw8to" path="res://door_left.gd" id="5_0lq5s"]
+[ext_resource type="Script" uid="uid://bpfmclp2tu8o4" path="res://door_right.gd" id="6_nuwwl"]
+[ext_resource type="Texture2D" uid="uid://csnfrywwrten8" path="res://images/Bird_enemy-removebg-preview.png" id="7_nuwwl"]
+[ext_resource type="Script" uid="uid://box7ufrm4j8a1" path="res://LEFTROOMText.gd" id="8_0jfw0"]
+[ext_resource type="Texture2D" uid="uid://c2k3pogbbwd7g" path="res://images/Gollem.png" id="9_3ix5l"]
+[ext_resource type="Script" uid="uid://bpsa5q7alee4d" path="res://RIGHTROOMtext.gd" id="10_g561g"]
+
+[node name="ACT2" type="Control" unique_id=536231023]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main room" type="Control" parent="." unique_id=773650962]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Main room" unique_id=1280195979]
+z_index = 2
+layout_mode = 0
+offset_left = 104.0
+offset_top = 434.0
+offset_right = 1117.0
+offset_bottom = 1046.0
+theme_override_font_sizes/font_size = 35
+text = "test"
+script = ExtResource("1_61bbl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Main room" unique_id=1236930261]
+light_mask = 0
+z_index = 1
+position = Vector2(594, 525.0625)
+scale = Vector2(1.7747748, 1.5416667)
+texture = ExtResource("2_ylsrg")
+
+[node name="TextureRect" type="TextureRect" parent="Main room" unique_id=1121407187]
+z_index = -2
+layout_mode = 0
+offset_left = 9.0
+offset_top = -6.0
+offset_right = 1173.0
+offset_bottom = 645.0
+texture = ExtResource("3_3yrsg")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="DoorLeft" type="Button" parent="Main room" unique_id=1469382427]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 75.0
+offset_right = 283.0
+offset_bottom = 480.0
+icon = ExtResource("4_oxhga")
+expand_icon = true
+script = ExtResource("5_0lq5s")
+
+[node name="DoorRight" type="Button" parent="Main room" unique_id=935469733]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 78.0
+offset_right = 1091.0
+offset_bottom = 483.0
+icon = ExtResource("4_oxhga")
+expand_icon = true
+script = ExtResource("6_nuwwl")
+
+[node name="LEFTROOM" type="Control" parent="." unique_id=261724295]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="LEFTROOM" unique_id=2038428247]
+z_index = -2
+layout_mode = 0
+offset_left = -4.0
+offset_top = 2.0
+offset_right = 1160.0
+offset_bottom = 653.0
+texture = ExtResource("3_3yrsg")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="LEFTROOM" unique_id=1235006050]
+light_mask = 0
+z_index = 1
+position = Vector2(575, 540)
+scale = Vector2(1.7409096, 1.5248507)
+texture = ExtResource("2_ylsrg")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LEFTROOM" unique_id=190822725]
+position = Vector2(589, 218)
+scale = Vector2(0.82268715, 0.7812317)
+texture = ExtResource("7_nuwwl")
+
+[node name="Label" type="Label" parent="LEFTROOM" unique_id=82955606]
+z_index = 2
+layout_mode = 0
+offset_left = 118.0
+offset_top = 447.0
+offset_right = 1131.0
+offset_bottom = 1059.0
+theme_override_font_sizes/font_size = 35
+text = "test"
+script = ExtResource("8_0jfw0")
+
+[node name="RIGHTROOM" type="Control" parent="." unique_id=1643673291]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="RIGHTROOM" unique_id=298023609]
+z_index = -2
+layout_mode = 0
+offset_left = -4.0
+offset_top = 2.0
+offset_right = 1160.0
+offset_bottom = 653.0
+texture = ExtResource("3_3yrsg")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RIGHTROOM" unique_id=1897150620]
+light_mask = 0
+z_index = 1
+position = Vector2(575, 540)
+scale = Vector2(1.7409096, 1.5248507)
+texture = ExtResource("2_ylsrg")
+
+[node name="Sprite2D2" type="Sprite2D" parent="RIGHTROOM" unique_id=1484237230]
+position = Vector2(597, 253)
+scale = Vector2(0.62499994, 0.5896516)
+texture = ExtResource("9_3ix5l")
+
+[node name="Label" type="Label" parent="RIGHTROOM" unique_id=1127748808]
+z_index = 2
+layout_mode = 0
+offset_left = 82.0
+offset_top = 458.0
+offset_right = 1095.0
+offset_bottom = 1070.0
+theme_override_font_sizes/font_size = 35
+text = "test"
+script = ExtResource("10_g561g")

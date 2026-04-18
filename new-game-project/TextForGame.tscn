@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bgg137o5tse6i"]
+
+[ext_resource type="Script" uid="uid://ds4671kptkudm" path="res://Text-preEncounter.gd" id="1_vq81b"]
+[ext_resource type="Texture2D" uid="uid://pc1ax6lfnitv" path="res://images/Textbox.png" id="2_3ysww"]
+
+[node name="Control" type="Control" unique_id=154517198]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = 7.0
+offset_right = -22.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1441873833]
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.37100002
+anchor_bottom = 0.694
+offset_left = 99.0
+offset_top = 452.0
+offset_right = 688.608
+offset_bottom = 530.28796
+theme_override_font_sizes/font_size = 35
+text = "test"
+autowrap_mode = 2
+script = ExtResource("1_vq81b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1867895316]
+light_mask = 0
+z_index = -1
+position = Vector2(594, 525.0625)
+scale = Vector2(1.7747748, 1.5416667)
+texture = ExtResource("2_3ysww")

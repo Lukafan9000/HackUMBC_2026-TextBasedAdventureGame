@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c28nfplm7agv4"]
+
+[node name="FINALBOSS" type="Node" unique_id=64089356]
+
+[node name="BOSS INTERFACE" type="Control" parent="." unique_id=962639831]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=54866762]

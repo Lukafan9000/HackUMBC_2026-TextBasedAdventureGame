@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://5ksc5hmst7rd"]
 
+[ext_resource type="Script" uid="uid://biera5gegncvm" path="res://rest_button.gd" id="1_wbfu4"]
+[ext_resource type="Script" uid="uid://bwtdskcs8wafm" path="res://button.gd" id="2_xkndl"]
+
 [node name="Node2D" type="Node2D" unique_id=980082283]
 
 [node name="restButton" type="Button" parent="." unique_id=54082872]
@@ -9,6 +12,7 @@ offset_right = 457.0
 offset_bottom = 558.0
 theme_override_font_sizes/font_size = 50
 text = "Rest"
+script = ExtResource("1_wbfu4")
 
 [node name="nextButton" type="Button" parent="." unique_id=1447161043]
 offset_left = 677.0
@@ -19,17 +23,21 @@ theme_override_font_sizes/font_size = 50
 text = "Next"
 
 [node name="itemsButton" type="Button" parent="." unique_id=1137282446]
-offset_left = 666.0
-offset_top = 433.0
-offset_right = 1029.0
-offset_bottom = 558.0
+offset_left = 705.0
+offset_top = 424.0
+offset_right = 1068.0
+offset_bottom = 549.0
 theme_override_font_sizes/font_size = 50
 text = "Items"
 
-[node name="Button" type="Button" parent="." unique_id=1156453796]
+[node name="statsButton" type="Button" parent="." unique_id=1156453796]
 offset_left = 95.0
 offset_top = 135.0
 offset_right = 458.0
 offset_bottom = 260.0
 theme_override_font_sizes/font_size = 50
 text = "Stats"
+script = ExtResource("2_xkndl")
+
+[connection signal="pressed" from="restButton" to="restButton" method="_on_pressed"]
+[connection signal="pressed" from="statsButton" to="statsButton" method="_on_pressed"]
